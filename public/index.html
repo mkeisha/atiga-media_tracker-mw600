@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | My Media Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a href="index.html" class="brand">My Media Tracker</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Dashboard</a>
+        <a href="library.html">Media Library</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <p class="eyebrow">Overview</p>
+        <h1>My Media Tracker</h1>
+        <p class="intro">Keep your books and movies organized in one simple place.</p>
+      </section>
+
+      <section class="summary-grid" aria-label="Media summary">
+        <article class="summary-card">
+          <span class="summary-label">Total Media</span>
+          <strong id="total-media" class="summary-value">0</strong>
+        </article>
+        <article class="summary-card">
+          <span class="summary-label">Want to Watch</span>
+          <strong id="want-to-watch" class="summary-value">0</strong>
+        </article>
+        <article class="summary-card">
+          <span class="summary-label">Completed</span>
+          <strong id="completed" class="summary-value">0</strong>
+        </article>
+      </section>
+      <p id="dashboard-message" class="message" role="status"></p>
+
+      <section class="dashboard-link">
+        <div>
+          <h2>Browse your collection</h2>
+          <p>View, edit, or remove any media record from your library.</p>
+        </div>
+        <a href="library.html" class="btn primary">View Media Library</a>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

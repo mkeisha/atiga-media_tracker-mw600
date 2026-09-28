@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Media | My Media Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a href="index.html" class="brand">My Media Tracker</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Dashboard</a>
+        <a href="library.html" aria-current="page">Media Library</a>
+      </nav>
+    </header>
+
+    <main class="form-page">
+      <div class="page-heading compact-heading">
+        <div>
+          <p class="eyebrow">Media Library</p>
+          <h1>Edit Media</h1>
+        </div>
+      </div>
+
+      <form id="edit-form" class="form-card">
+        <p id="form-message" class="message" role="status"></p>
+        <div class="form-field">
+          <label for="title">Title</label>
+          <input type="text" id="title" required />
+        </div>
+        <div class="form-field">
+          <label for="type">Type</label>
+          <select id="type" required>
+            <option value="">Select type</option>
+            <option value="Book">Book</option>
+            <option value="Movie">Movie</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="status">Status</label>
+          <select id="status" required>
+            <option value="">Select status</option>
+            <option value="Want to">Want to</option>
+            <option value="In progress">In progress</option>
+            <option value="Done">Done</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="rating">Rating <span class="field-hint">(1-5)</span></label>
+          <input type="number" id="rating" min="1" max="5" />
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Update</button>
+          <a href="library.html" class="btn secondary">Cancel</a>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/edit.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Library | My Media Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a href="index.html" class="brand">My Media Tracker</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Dashboard</a>
+        <a href="library.html" aria-current="page">Media Library</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">Your collection</p>
+          <h1>Media Library</h1>
+        </div>
+        <a href="add.html" class="btn primary">+ Add Media</a>
+      </div>
+
+      <section class="table-card" aria-labelledby="library-heading">
+        <h2 id="library-heading" class="sr-only">Media records</h2>
+        <p id="list-message" class="message" role="status"></p>
+        <div id="list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/list.js"></script>
+</body>
+</html>
